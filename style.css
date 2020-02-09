@@ -1,0 +1,16 @@
+#city {
+    float: left;
+}
+
+#searchBtn {
+    float: left;
+}
+
+#currentCity {
+    padding: 15px;
+}
+
+.card {
+    padding: 15px;
+    background-color: blueviolet;
+}
