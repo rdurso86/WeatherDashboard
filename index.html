@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
 
@@ -19,56 +19,86 @@
         </div>
     </nav>
 
-    <!-- <div class="row">
-        <div class="col s12 m6">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Card Title</span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="row">
-        <div id="citySearch" class="col s2 m4 l5">
+
+        <div id="citySearch" class="col s2 m3 l4">
             <h3>Search for a city:</h3>
-            <input type="text" name="city" id="city" />
-            <button type="button" class="fas fa-search btn btn-primary" id="searchBtn"></button>
-            <div id="searchedList" class="card"></div>
+            <span class="row">
+                <div class="input-field">
+                    <input type="text" name="city" id="city" />
+                </div>
+                <div class="input-field">
+                    <button type="button" class="fas fa-search btn" id="searchBtn"></button>
+                </div>
+            </span>
+            <br>
+            <div id="searchedList" class="card row"></div>
         </div>
 
+        <div class="col m6 l7">
 
-        <div id="currentCity" class="col s2 m4 l5 offset-l6">
-            <div class="card small">
-                <span id="current"></span>
-                <span id="today"></span>
-                <ul class="temp"></ul>
-                <ul class="humid"></ul>
-                <ul class="wind"></ul>
-                <ul class="uv"></ul>
+            <div id="currentCity" class="row">
+                <div class="card small">
+                    <div class="col">
+                        <span id="current"></span>
+                        <span id="today"></span>
+                        <ul class="temp"></ul>
+                        <ul class="humid"></ul>
+                        <ul class="wind"></ul>
+                        <ul class="uv"></ul>
+                    </div>
+                    <div class="col"><img class="currentImage" src=""></div>
+                </div>
             </div>
-        </div>
 
+
+            <div class="row">
+                <h3>Five Day Forecast:</h3>
+
+                <div id="fiveDay">
+
+                    <div class="card fiver col l2">
+                        <p class="fiveDate1"></p>
+                        <img class="fiveImage1" src="">
+                        <p class="fiveTemp1"></p>
+                        <p class="fiveHumid1"></p>
+                    </div>
+
+                    <div class="card fiver col l2">
+                        <p class="fiveDate2"></p>
+                        <img class="fiveImage2" src="">
+                        <p class="fiveTemp2"></p>
+                        <p class="fiveHumid2"></p>
+                    </div>
+
+                    <div class="card fiver col l2">
+                        <p class="fiveDate3"></p>
+                        <img class="fiveImage3" src="">
+                        <p class="fiveTemp3"></p>
+                        <p class="fiveHumid3"></p>
+                    </div>
+
+                    <div class="card fiver col l2">
+                        <p class="fiveDate4"></p>
+                        <img class="fiveImage4" src="">
+                        <p class="fiveTemp4"></p>
+                        <p class="fiveHumid4"></p>
+                    </div>
+
+                    <div class="card fiver col l2">
+                        <p class="fiveDate5"></p>
+                        <img class="fiveImage5" src="">
+                        <p class="fiveTemp5"></p>
+                        <p class="fiveHumid5"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
-    <div class="row">
-        <div class="col l5 offset-l6" id="fiveDay">
-            <h3>Five Day Forecast:</h3>
-            <div class="card">
-                <p class="fiveDate"></p>
-                <p class="fiveImage"></p>
-                <p class="fiveTemp"></p>
-                <p class="fiveHumid"></p>
-            </div>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>

@@ -4,13 +4,25 @@
 
 #searchBtn {
     float: left;
+    position: relative;
 }
 
 #currentCity {
     padding: 15px;
 }
 
+.fiver {
+    background-color: #436aec;
+    color: #ffffff;
+    margin: 10px;
+}
+
 .card {
     padding: 15px;
-    background-color: blueviolet;
+}
+
+#current, #today {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
 }
