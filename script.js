@@ -1,4 +1,3 @@
-//let city = $("#city").val();
 let citySearch = $("#citySearch");
 let searchBtn = $("#searchBtn");
 let searchedList = $("#searchedList");
